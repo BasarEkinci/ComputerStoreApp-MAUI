@@ -1,12 +1,133 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ComputerStoreApp.Pages.PaymentPage"
-             Title="PaymentPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             x:Class="ComputerStoreApp.Pages.PaymentPage">
+    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Background="Red">
+        <Label
+         Text="Ihab 111111111111"
+         TextColor="White"
+         FontAttributes="Bold"
+         HorizontalOptions="Center"
+         FontSize="20"
+         />
+        
+        <StackLayout Background="White" VerticalOptions="FillAndExpand" HorizontalOptions="Center" Orientation="Vertical" WidthRequest="350">
+            <Label
+                Text="Cardholder Name"
+                Margin="15,15,0,0"
+                HorizontalOptions="Start"
+                FontAttributes="Bold"
+                FontSize="35"
+                />
+            <StackLayout HorizontalOptions="CenterAndExpand">
+                <Frame BorderColor="Gray" CornerRadius="0" Padding="5" BackgroundColor="Gray">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Padding="0">
+                        <Entry
+                            WidthRequest="300"
+                            HeightRequest="40"
+                            BackgroundColor="White"
+                            />
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <Label
+                Text="Card Number"
+                Margin="15,15,0,0"
+                HorizontalOptions="Start"
+                FontAttributes="Bold"
+                FontSize="35"
+                />
+            <StackLayout HorizontalOptions="CenterAndExpand">
+                <Frame BorderColor="Gray" CornerRadius="0" Padding="5" BackgroundColor="Gray">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Padding="0">
+                        <Entry
+                            WidthRequest="300"
+                            HeightRequest="40"
+                            BackgroundColor="White"
+                            />
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Spacing="130">
+                <StackLayout Orientation="Vertical">
+                    <Label
+                        Text="Date"
+                        Margin="15,15,0,0"
+                        HorizontalOptions="Start"
+                        FontAttributes="Bold"
+                        FontSize="35"/>
+                    <StackLayout HorizontalOptions="CenterAndExpand">
+                        <Frame BorderColor="Gray" CornerRadius="0" Padding="5" BackgroundColor="Gray" Margin="15,0,0,0">
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Padding="0">
+                                <Entry
+                                    WidthRequest="80"
+                                    HeightRequest="40"
+                                    BackgroundColor="White"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Vertical">
+                    <Label
+                        Text="CVV"
+                        Margin="0,15,0,0"
+                        HorizontalOptions="Center"
+                        FontAttributes="Bold"
+                        FontSize="35"/>
+                    <StackLayout HorizontalOptions="CenterAndExpand">
+                        <Frame BorderColor="Gray" CornerRadius="0" Padding="5" BackgroundColor="Gray">
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Padding="0">
+                                <Entry
+                                    WidthRequest="80"
+                                    HeightRequest="40"
+                                    BackgroundColor="White"
+                                    HorizontalOptions="End"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Orientation="Vertical" RadioButtonGroup.GroupName="PaymentType">
+                <RadioButton
+                    GroupName="PaymentType"
+                    Content="Cache"
+                    FontAttributes="Bold"
+                    Scale="1.5"
+                    Margin="70,15,0,0"
+                    BorderColor="Black"
+                    />
+                <RadioButton
+                    GroupName="PaymentType"
+                    Content="Installments"
+                    FontAttributes="Bold"
+                    Scale="1.5"
+                    Margin="70,0,0,0"
+                    BorderColor="Black"
+                    />
+                <Label
+                    Text="Total: 2100"
+                    HorizontalOptions="Center"
+                    Margin="0,20,0,0"
+                    FontAttributes="Bold"
+                    FontSize="40"
+                    />
+                <Frame WidthRequest="120" HeightRequest="80" IsClippedToBounds="True" Background="Black" CornerRadius="20" Margin="0,25,0,0">
+                    <Button
+                        Text="Pay"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        FontSize="30"
+                        CornerRadius="20"
+                        WidthRequest="105"
+                        HeightRequest="70"
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand"
+                        Background="Red"
+                        />
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
 </ContentPage>
