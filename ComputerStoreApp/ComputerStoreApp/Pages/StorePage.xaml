@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ComputerStoreApp.Pages.StorePage">
+
+    <StackLayout Background="Red" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <Label
+            Text="Ihab 111111111111"
+            TextColor="White"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            FontSize="20"
+            />
+        <StackLayout Background="White" VerticalOptions="FillAndExpand" HorizontalOptions="Center" Orientation="Vertical" WidthRequest="350">
+            <StackLayout Orientation="Horizontal" Spacing="50" HorizontalOptions="FillAndExpand" Margin="20">
+                <StackLayout Orientation="Vertical" RadioButtonGroup.GroupName="CPU_Buttons" HorizontalOptions="Start">
+                    <Label
+                        Text="CPU"
+                        TextColor="Black"
+                        FontSize="40"
+                        FontAttributes="Bold"
+                        />
+                    <RadioButton
+                        Content="Core i3"
+                        Scale="1.6"
+                        GroupName="CPU_Buttons"
+                        />
+                    <RadioButton
+                        Content="Core i5"
+                        Scale="1.6"
+                        GroupName="CPU_Buttons"
+                        />
+                    <RadioButton
+                        Content="Core i7"
+                        Scale="1.6"
+                        GroupName="CPU_Buttons"
+                        />
+                    <RadioButton
+                        Content="Core i9"
+                        Scale="1.6"
+                        GroupName="CPU_Buttons"
+                        />
+                </StackLayout>
+                <StackLayout Orientation="Vertical" RadioButtonGroup.GroupName="Storage_Buttons" HorizontalOptions="EndAndExpand">
+                    <Label
+                        Text="Storage"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        FontSize="40"
+                        />
+                    <RadioButton
+                        GroupName="Storage_Buttons"
+                        Content="SSD"
+                        Scale="1.6"
+                        />
+                    <RadioButton
+                        GroupName="Storage_Buttons"
+                        Content="SSD"
+                        Scale="1.6"
+                        />
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center" RadioButtonGroup.GroupName="Monitor_Buttons">
+                <Label
+                    Text="Monitor"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    FontSize="40"/>
+                <RadioButton
+                    GroupName="Monitor_Buttons"
+                    Content="Philips"
+                    Scale="1.6"
+                    />
+                <RadioButton
+                    GroupName="Monitor_Buttons"
+                    Content="NEC"
+                    Scale="1.6"
+                    />
+                <RadioButton
+                    GroupName="Monitor_Buttons"
+                    Content="HP"
+                    Scale="1.6"
+                    />
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
