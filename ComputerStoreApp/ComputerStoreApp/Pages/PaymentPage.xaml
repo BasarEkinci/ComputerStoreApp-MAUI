@@ -41,6 +41,7 @@
                 <Frame BorderColor="Gray" CornerRadius="0" Padding="5" BackgroundColor="Gray">
                     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Padding="0">
                         <Entry
+                            Keyboard="Numeric"
                             WidthRequest="300"
                             HeightRequest="40"
                             BackgroundColor="White"
@@ -49,7 +50,7 @@
                 </Frame>
             </StackLayout>
 
-            <StackLayout Orientation="Horizontal" Spacing="130">
+            <StackLayout Orientation="Horizontal" Spacing="50">
                 <StackLayout Orientation="Vertical">
                     <Label
                         Text="Date"
@@ -61,9 +62,24 @@
                         <Frame BorderColor="Gray" CornerRadius="0" Padding="5" BackgroundColor="Gray" Margin="15,0,0,0">
                             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Padding="0">
                                 <Entry
+                                    WidthRequest="50"
+                                    HeightRequest="40"
+                                    BackgroundColor="White"
+                                    Keyboard="Numeric"/>
+                                <Label
+                                    Text="/"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    BackgroundColor="White"
+                                    FontAttributes="Bold"
+                                    FontSize="30"
+                                    HeightRequest="40"
+                                    />
+                                <Entry
                                     WidthRequest="80"
                                     HeightRequest="40"
-                                    BackgroundColor="White"/>
+                                    BackgroundColor="White"
+                                    Keyboard="Numeric"/>
                             </StackLayout>
                         </Frame>
                     </StackLayout>
@@ -79,6 +95,7 @@
                         <Frame BorderColor="Gray" CornerRadius="0" Padding="5" BackgroundColor="Gray">
                             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Padding="0">
                                 <Entry
+                                    Keyboard="Numeric"
                                     WidthRequest="80"
                                     HeightRequest="40"
                                     BackgroundColor="White"
