@@ -20,7 +20,9 @@
             <StackLayout HorizontalOptions="CenterAndExpand">
                 <Frame BorderColor="Black" CornerRadius="0" Padding="5" BackgroundColor="Black">
                     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Padding="0">
-                        <Button 
+                        <Button
+                            x:Name="DecreaseMemory"
+                            Clicked="MemoryButton_Clicked"
                             Text="-"
                             TextColor="Black"
                             FontSize="Large"
@@ -28,7 +30,8 @@
                             BackgroundColor="White"
                             HorizontalOptions="Start"
                             Padding="5"/>
-                        <Label 
+                        <Label
+                            x:Name="MemoryLabel"
                             Text="0"
                             FontAttributes="Bold"
                             FontSize="Large"
@@ -41,7 +44,9 @@
                             Margin="5,0,5,0"
                             WidthRequest="45"
                             HeightRequest="45"/>
-                        <Button 
+                        <Button
+                            x:Name="IncreaseMemory"
+                            Clicked="MemoryButton_Clicked"
                             Text="+"
                             TextColor="Black"
                             FontSize="Large"
@@ -62,35 +67,40 @@
             <StackLayout HorizontalOptions="CenterAndExpand">
                 <Frame BorderColor="Black" CornerRadius="0" Padding="5" BackgroundColor="Black">
                     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Padding="0">
-                        <Button 
-                           Text="-"
-                           TextColor="Black"
-                           FontSize="Large"
-                           CornerRadius="1"
-                           BackgroundColor="White"
-                           HorizontalOptions="Start"
-                           Padding="5"/>
+                        <Button
+                            x:Name="DecreaseStorageButton"
+                            Clicked="StorageButton_Cliced"
+                            Text="-"
+                            TextColor="Black"
+                            FontSize="Large"
+                            CornerRadius="1"
+                            BackgroundColor="White"
+                            HorizontalOptions="Start"
+                            Padding="5"/>
                         <Label 
-                           Text="0"
-                           FontAttributes="Bold"
-                           FontSize="Large"
-                           BackgroundColor="White"
-                           TextColor="Black"
-                           HorizontalOptions="FillAndExpand"
-                           VerticalOptions="CenterAndExpand" 
-                           HorizontalTextAlignment="Center" 
-                           VerticalTextAlignment="Center"
-                           Margin="5,0,5,0"
-                           WidthRequest="45"
-                           HeightRequest="45"/>
+                            x:Name="StorageLabel"
+                            Text="0"
+                            FontAttributes="Bold"
+                            FontSize="Large"
+                            BackgroundColor="White"
+                            TextColor="Black"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand" 
+                            HorizontalTextAlignment="Center" 
+                            VerticalTextAlignment="Center"
+                            Margin="5,0,5,0"
+                            WidthRequest="45"
+                            HeightRequest="45"/>
                         <Button 
-                           Text="+"
-                           TextColor="Black"
-                           FontSize="Large"
-                           CornerRadius="1"
-                           BackgroundColor="White"
-                           HorizontalOptions="Start"
-                           Padding="5"/>
+                            x:Name="IncreaseStorageButton"
+                            Clicked="StorageButton_Clicked"
+                            Text="+"
+                            TextColor="Black"
+                            FontSize="Large"
+                            CornerRadius="1"
+                            BackgroundColor="White"
+                            HorizontalOptions="Start"
+                            Padding="5"/>
                     </StackLayout>
                 </Frame>
             </StackLayout>
@@ -105,34 +115,39 @@
                 <Frame BorderColor="Black" CornerRadius="0" Padding="5" BackgroundColor="Black">
                     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Padding="0">
                         <Button 
-                           Text="-"
-                           TextColor="Black"
-                           FontSize="Large"
-                           CornerRadius="1"
-                           BackgroundColor="White"
-                           HorizontalOptions="Start"
-                           Padding="5"/>
-                        <Label 
-                           Text="0"
-                           FontAttributes="Bold"
-                           FontSize="Large"
-                           BackgroundColor="White"
-                           TextColor="Black"
-                           HorizontalOptions="FillAndExpand"
-                           VerticalOptions="CenterAndExpand" 
-                           HorizontalTextAlignment="Center" 
-                           VerticalTextAlignment="Center"
-                           Margin="5,0,5,0"
-                           WidthRequest="45"
-                           HeightRequest="45"/>
-                        <Button 
-                           Text="+"
-                           TextColor="Black"
-                           FontSize="Large"
-                           CornerRadius="1"
-                           BackgroundColor="White"
-                           HorizontalOptions="Start"
-                           Padding="5"/>
+                            x:Name="DecreaseMonitorSize"
+                            Clicked="MonitorSizeButton_Clicked"
+                            Text="-"
+                            TextColor="Black"
+                            FontSize="Large"
+                            CornerRadius="1"
+                            BackgroundColor="White"
+                            HorizontalOptions="Start"
+                            Padding="5"/>
+                        <Label
+                            x:Name="MonitorSizeLabel"
+                            Text="0"
+                            FontAttributes="Bold"
+                            FontSize="Large"
+                            BackgroundColor="White"
+                            TextColor="Black"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand" 
+                            HorizontalTextAlignment="Center" 
+                            VerticalTextAlignment="Center"
+                            Margin="5,0,5,0"
+                            WidthRequest="45"
+                            HeightRequest="45"/>
+                        <Button
+                            x:Name="IncreaseMonitorSize"
+                            Clicked="MonitorSizeButton_Clicked"
+                            Text="+"
+                            TextColor="Black"
+                            FontSize="Large"
+                            CornerRadius="1"
+                            BackgroundColor="White"
+                            HorizontalOptions="Start"
+                            Padding="5"/>
                     </StackLayout>
                 </Frame>
             </StackLayout>

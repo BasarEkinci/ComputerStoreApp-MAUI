@@ -21,68 +21,92 @@
                         FontAttributes="Bold"
                         />
                     <RadioButton
+                        x:Name="I3Button"
                         Content="Core i3"
                         Scale="1.6"
                         GroupName="CPU_Buttons"
+                        CheckedChanged="CPUButton_CheckedChanged"
                         />
                     <RadioButton
+                        x:Name="I5Button"
                         Content="Core i5"
                         Scale="1.6"
                         GroupName="CPU_Buttons"
+                        CheckedChanged="CPUButton_CheckedChanged"
                         />
                     <RadioButton
+                        x:Name="I7Button"
                         Content="Core i7"
                         Scale="1.6"
                         GroupName="CPU_Buttons"
+                        CheckedChanged="CPUButton_CheckedChanged"
                         />
                     <RadioButton
+                        x:Name="I9Button"
                         Content="Core i9"
                         Scale="1.6"
                         GroupName="CPU_Buttons"
+                        CheckedChanged="CPUButton_CheckedChanged"
                         />
                 </StackLayout>
-                <StackLayout Orientation="Vertical" RadioButtonGroup.GroupName="Storage_Buttons" HorizontalOptions="EndAndExpand">
+                <StackLayout Orientation="Vertical" RadioButtonGroup.GroupName="Storage_Buttons" HorizontalOptions="FillAndExpand">
                     <Label
                         Text="Storage"
                         TextColor="Black"
                         FontAttributes="Bold"
                         FontSize="40"
+                        HorizontalOptions="Center"
                         />
                     <RadioButton
+                        x:Name="SSDButton"
                         GroupName="Storage_Buttons"
                         Content="SSD"
                         Scale="1.6"
+                        HorizontalOptions="Center"
+                        CheckedChanged="StorageButton_CheckedChanged"
                         />
                     <RadioButton
+                        x:Name="HDDButton"
                         GroupName="Storage_Buttons"
-                        Content="SSD"
+                        Content="HDD"
                         Scale="1.6"
+                        HorizontalOptions="Center"
+                        CheckedChanged="StorageButton_CheckedChanged"
                         />
                 </StackLayout>
             </StackLayout>
-            <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center" RadioButtonGroup.GroupName="Monitor_Buttons">
+            <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="FillAndExpand" RadioButtonGroup.GroupName="Monitor_Buttons">
+
                 <Label
                     Text="Monitor"
                     TextColor="Black"
                     FontAttributes="Bold"
-                    FontSize="40"/>
+                    FontSize="40"
+                    HorizontalOptions="Center"/>
                 <RadioButton
+                    x:Name="PhilipsButton"
                     GroupName="Monitor_Buttons"
                     Content="Philips"
                     Scale="1.6"
+                    HorizontalOptions="Center"
+                    CheckedChanged="MonitorButton_CheckedChanged"
                     />
                 <RadioButton
+                    x:Name="NECButton"
                     GroupName="Monitor_Buttons"
-                    Content="NEC"
+                    Content="NEC    "
                     Scale="1.6"
+                    HorizontalOptions="Center"
+                    CheckedChanged="MonitorButton_CheckedChanged"
                     />
                 <RadioButton
+                    x:Name="HPButton"
                     GroupName="Monitor_Buttons"
-                    Content="HP"
+                    Content="HP      "
                     Scale="1.6"
-                    />
+                    HorizontalOptions="Center"
+                    CheckedChanged="MonitorButton_CheckedChanged"/>
             </StackLayout>
         </StackLayout>
     </StackLayout>
-
 </ContentPage>
