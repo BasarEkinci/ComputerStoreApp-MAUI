@@ -5,7 +5,7 @@ namespace ComputerStoreApp.Pages;
 public partial class ShopPage : ContentPage
 {
 	private int _memory = 4;
-	private int _monitorSize = 0;
+	private int _monitorSizeIncreaser = 0;
 	public ShopPage()
 	{
 		InitializeComponent();
@@ -34,8 +34,16 @@ public partial class ShopPage : ContentPage
 
 	private void StorageButton_Clicked(object sender, EventArgs e)
 	{
+		if(sender == IncreaseStorageButton)
+		{
+			
+		}
+		else if (sender == DecreaseStorageButton)
+		{
 
+		}
     }
+	
 
     private void MonitorSizeButton_Clicked(object sender, EventArgs e)
     {
